@@ -4,7 +4,6 @@ venv/
 
 .idea/
 
-src/farmers-protest-tweets-2021-2-4.json
 fixed_data.json
 
 src/.DS_Store
