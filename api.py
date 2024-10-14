@@ -6,7 +6,7 @@ from src.queries.queries import top_dates_query
 app = FastAPI()
 
 # Initialize bigquery client
-client = bigquery.Client.from_service_account_json("/Users/lauraramirez/Downloads/latam-challenge-438317-ff0b05c25930.json")
+client = bigquery.Client.from_service_account_json(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
 
 
 @app.get("/top_dates")
